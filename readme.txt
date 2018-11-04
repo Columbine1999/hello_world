@@ -6,6 +6,8 @@ Git is free sotfware.
 
 git has a mutable index called stage.
 
+MY stupid boss still prefers SVN.
+
 小结：两点内容
     1.初始化一个 Git 仓库 使用 git init 命令
     2.添加文件到Git仓库，分成两部：
