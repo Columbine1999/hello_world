@@ -12,7 +12,9 @@ MY stupid boss still prefers SVN.
     1.初始化一个 Git 仓库 使用 git init 命令
     2.添加文件到Git仓库，分成两部：
         使用命令 git add <file>
-        使用命令 git commit -m <message> 
+        使用命令 git commit -m <message>
+    3.查看上次的修改 ：使用命令
+    git diff HEAD -- file.txt 
 版本回退 小结：
     1. git status 命令可以让我们时刻掌握仓库当前的状态
     2.HEAD指向的是当前版本，因此，Git允许我们在版本的历
@@ -43,3 +45,10 @@ MY stupid boss still prefers SVN.
     SVN没有联网的时候是拒绝干活的！当有网络的时候，再把本
     地提交推送一下就完成了同步，真是太方便了。
     2.github 就是一个免费远程库。
+远程库克隆 ：先建立远程库，然后从远程库克隆。
+    如果有多人协同开发，那么每个人各自从远程库克隆一份就可
+    以了。
+    要clone一个仓库，首先必须知道仓库的地址，然后使用
+    git clone命令个进行clone
+    Git支持多种协议，包括https，但通过ssh支持的原生git速度
+    更快
