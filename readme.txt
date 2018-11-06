@@ -30,3 +30,9 @@ MY stupid boss still prefers SVN.
     景 1，按场景1 继续操作即可。
     场景 3 ： 已经提交了不合适的修改到文本库中，想要撤回
     本次提交，参考版本回退一节（前提是没有推送到远程库）
+添加远程库 小结：（先有本地库，后有远程库）
+    要关联一个远程库，使用命令 git remote add origin git@server-name:path/repo-name.git
+    关联后，使用命令 git push -u origin master第一次推送master分支的所有内容
+    此后每次本地提交后，只有有必要就可以使用命令 git push origin master 推送最新修改
+    note: 分布式版本系统的最大好处之一是在本地工作完全不需考虑远程库的存在，也就是有没有联网都可以正常工作，而SVN没有联网的时候是拒绝干活的！当有网络的时候，再把本地提交推送一下就完成了同步，真是太方便了。
+    github 就是一个免费远程库。
